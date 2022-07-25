@@ -1,0 +1,86 @@
+.search{
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  z-index: 999;
+  border-radius: 8px;
+  width: 380px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 8px 0 rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  background-color: #fff;
+}
+
+.input-container{
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+input[type="text"] {
+  border-radius: 4px;
+  height: 20px;
+  width: 86%;
+  background-color: #f0f3f7;
+  border: none;
+  padding: 8px;
+  color: #252525;
+  font-size: 16px;
+}
+
+input[type="text"]::placeholder {
+  color: #8596a6;
+}
+
+.button-container{
+  width: 100%;
+  text-align: right;
+}
+
+input[type="submit"] {
+  border-radius: 4px;
+  height: 40px;
+  box-shadow: 0 1px 2px 0 rgba(16, 162, 234, 0.3);
+  background: linear-gradient(#10a2ea, #0f99e8);
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  width: 88%;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+}
+
+.pick, .drop {
+  width: 12%;
+  height: 40px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+}
+
+.pick {
+  background-image: url('../../assets/icons/pickUpBadgeBlank.svg');
+}
+
+.pick.error{
+  background-image: url('../../assets/icons/pickUpBadgeError.svg');
+}
+
+.pick.valid{
+  background-image: url('../../assets/icons/pickUpBadgePresent.svg');
+}
+
+.drop {
+  background-image: url('../../assets/icons/dropOffBadgeBlank.svg');
+}
+
+.drop.error{
+  background-image: url('../../assets/icons/dropOffBadgeError.svg');
+}
+
+.drop.valid{
+  background-image: url('../../assets/icons/dropOffBadgePresent.svg');
+}
+
+.disabled {
+  opacity: 50%;
+}
